@@ -1,27 +1,21 @@
-Yes, your `path.md` should be **only the steps to create and run the app**.
-
-Git and GitHub instructions belong in `GitHub.md`. You're right to remove them.
+Here is your updated `path.md` — shortened to match what you actually have now.
 
 ---
-
-## Here is your cleaned `path.md` — one copy box:
 
 ```markdown
 # Complete Beginner's Guide: From Nothing to Running Mobile App
 
-## Prerequisites
+## Step 1: Install VS Code
 
-**Step 1: Install VS Code**
+Go to `code.visualstudio.com` → Download → Install.
 
-Go to `code.visualstudio.com` → Download → Install. Click "Next" on everything.
+## Step 2: Install Node.js
 
-**Step 2: Install Node.js**
+Go to `nodejs.org` → Download the LTS version → Install.
 
-Go to `nodejs.org` → Download the LTS version (left button) → Install. Click "Next" on everything.
+## Step 3: Verify Installation
 
-**Step 3: Verify Installation**
-
-Open VS Code. Open Terminal: `Terminal` → `New Terminal` (or press `Ctrl + `` `).
+Open VS Code. Open Terminal: `Terminal` → `New Terminal` (or `Ctrl + `` `).
 
 Type:
 ```bash
@@ -35,36 +29,36 @@ npm --version
 ```
 You should see `10.x.x` or similar.
 
-## Create Your App
+## Step 4: Create your app
 
-**Step 4: Create the app folder**
 ```bash
 npx create-expo-app my-app --template blank
 ```
 
-**Step 5: Enter the app folder**
+## Step 5: Go into your app folder
+
 ```bash
 cd my-app
 ```
 
-**Step 6: Install web support**
+## Step 6: Install web support
+
 ```bash
 npx expo install react-dom react-native-web
 ```
 
-**Step 7: Install navigation (for tabs)**
+## Step 7: Install navigation (for tabs)
+
 ```bash
 npx expo install @react-navigation/native @react-navigation/bottom-tabs
 npx expo install react-native-screens react-native-safe-area-context
 ```
 
-**Step 8: Open folder in VS Code**
+## Step 8: Open the folder in VS Code
 
 `File` → `Open Folder` → Select `my-app`
 
-## Write Your First Code
-
-**Step 9: Replace App.js**
+## Step 9: Write your first code
 
 Delete everything in `App.js` and paste this:
 
@@ -119,32 +113,36 @@ export default function App() {
 
 Save: `Ctrl + S`
 
-## Run Your App
+## Step 10: Run your app in a browser
 
-**Step 10: Start in browser**
 ```bash
 npx expo start --web
 ```
 
-**Step 11: Test on phone (optional)**
+## Step 11: (Optional) Run on your phone
+
 ```bash
 npx expo start
 ```
 Install Expo Go on your phone. Scan the QR code.
 
-## Quick Reference (All Commands)
+---
+
+## Quick Reference
 
 ```bash
-# Create and setup
+# Create
 npx create-expo-app my-app --template blank
 cd my-app
+
+# Install
 npx expo install react-dom react-native-web
 npx expo install @react-navigation/native @react-navigation/bottom-tabs
 npx expo install react-native-screens react-native-safe-area-context
 
 # Run
 npx expo start --web    # browser
-npx expo start          # QR code for phone
+npx expo start          # phone
 ```
 
 You now have a working mobile app running on your computer and phone.
@@ -152,6 +150,4 @@ You now have a working mobile app running on your computer and phone.
 
 ---
 
-**This is your `path.md` now.** No Git. No GitHub. Just the steps to create and run the app.
-
-Git and GitHub steps stay in `GitHub.md` where they belong.
+**That's it. Short. Clean. Only what you actually need.**
