@@ -19,7 +19,7 @@ his shows: "untracked file: test.txt" (Git sees it but isn't tracking it yet)
     Now git status will show "Changes to be committed"
 
 3. Commit the file (save a snapshot)
-- git commit -m "Add test.txt file"
+- git commit -m "..." "Add test.txt file"
     The -m means "message" — always write what you changed, Message as to be in quotes ""
 
 4. Push to GitHub
